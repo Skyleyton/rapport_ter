@@ -1,0 +1,116 @@
+% Coding in utf8
+%% 
+%% Author:  MACÉ Sébastien 
+%% Created: Mars 2017 
+%% 
+%  Package 
+\typeout{*** setup ***}
+
+\input{_setup.tex}
+
+% macros
+\typeout{*** helper ***}
+
+\input{_helper.tex}
+
+%%====================================================
+%%%				     Definitions	
+%%====================================================
+\def\titre{Titre}    % Title of your document  \def définie des variable ici on défini une variable titre , auteur et numéro étudiant...
+\def\auteur{Anne \textsc{Martin}}  %  Your name
+\def\numetu{00000000}
+% %% PATH to pictures
+\graphicspath{{figures/}} 
+
+%%====================================================
+%%%				     Parametre de la table des matière	
+%%====================================================
+\setcounter{tocdepth}{3} % mis en place de la profondeur d'affichage de la table des matiere tco
+\setcounter{secnumdepth}{3}
+
+
+%=======================================
+%%				   BEGIN				 %%
+%=======================================
+\begin{document}
+
+%                            -=---------------=-
+\typeout{*** couverture ***}
+\include{sections/couverture}
+%                            -=---------------=-
+\newpage 
+\thispagestyle{empty}
+\null
+%                            -=---------------=-
+\newpage
+\begin{dedication}
+	\textit{Do or do not, there is no try\\May the force be with you }\\[0.3cm]
+	
+	$\sim $\\[0.3cm]
+	
+	Yoda - 1977	
+\end{dedication}
+%                            -=---------------=-
+\pagenumbering{Roman}\setcounter{page}{2}
+\newpage ~\\[19cm] 
+\copyright \ \LaTeX \ original style made by  David LAÏ-YOCK (2016)\\
+\copyright \ \LaTeX \ modified by  Sébastien MACÉ (2017)  
+%                            -=---------------=-
+\typeout{*** Remerciements ***}
+\include{sections/Remerciements}
+%                            -=---------------=-
+\newpage
+\null
+%                            -=---------------=-
+\newpage
+\typeout{*** Resume ***}
+\include{sections/Resume}
+%                            -=---------------=-
+\newpage 
+\null
+%                            -=---------------=-
+\typeout{*** TOC ***}
+\newpage
+\pagestyle{empty}
+\thispagestyle{empty}
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\thispagestyle{empty}
+
+%                            -=---------------=-
+%% ----- Formattage Général
+\newpage
+\listoffigures
+%\singlespacing
+\printglossary[title = Glossaire]
+%\doublespacing
+%\thispagestyle{empty}
+%                            -=---------------=-
+\newpage
+%                            -=---------------=-
+\typeout{*** Introduction ***}
+\newpage
+\pagestyle{plain}
+\pagenumbering{arabic}\setcounter{page}{1}
+\input{sections/Introduction}
+%                            -=---------------=-
+\typeout{*** Part 1 ***}
+\newpage
+\input{sections/part1.tex}
+%                            -=---------------=-
+\typeout{*** Conclusion ***}
+\newpage
+\input{sections/Conclusion}
+
+%                            -=---------------=-
+\typeout{*** Bibliographie ***}
+\newpage
+\include{sections/Bibliographie}
+%                            -=---------------=-
+\typeout{*** Annexes ***}
+\renewcommand{\thesection}{\Alph{section}}
+\newpage
+\input{sections/Annexes} 
+%                            -=---------------=-
+\end{document}
+%                            -=---------------=-
