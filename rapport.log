@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.31)  28 MAY 2024 11:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.31)  9 DEC 2024 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1942,33 +1942,34 @@ Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ))
 *** helper ***
 (_helper.tex)
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 35
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 51
 .
 
 (C:\Users\tiida\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-No file rapport.aux.
+(rapport.aux (sections/couverture.aux) (sections/Remerciements.aux)
+(sections/Resume.aux) (sections/Bibliographie.aux))
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 
 (C:\Users\tiida\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1995,14 +1996,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \degres on input line 35.
+LaTeX Info: Redefining \degres on input line 51.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 35.
+(french.ldf)             reported on input line 51.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 35.
-LaTeX Info: Redefining \up on input line 35.
+(french.ldf)             reported on input line 51.
+LaTeX Info: Redefining \up on input line 51.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -2015,7 +2016,9 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 51.
+
+(rapport.out) (rapport.out)
 \@outlinefile=\write6
 \openout6 = `rapport.out'.
 
@@ -2063,17 +2066,17 @@ Dictionary: glossaries-dictionary, Language: English
 \openout2 = `sections/couverture.aux'.
 
 (sections/couverture.tex
-<figures/Logos/logoUR.jpg, id=30, 655.44875pt x 145.54375pt>
+<figures/Logos/logoUR.jpg, id=70, 655.44875pt x 145.54375pt>
 File: figures/Logos/logoUR.jpg Graphic file (type jpg)
 <use figures/Logos/logoUR.jpg>
 Package pdftex.def Info: figures/Logos/logoUR.jpg  used on input line 8.
 (pdftex.def)             Requested size: 98.31306pt x 21.83061pt.
-<figures/Logos/logoFST.pdf, id=31, 869.2475pt x 236.885pt>
+<figures/Logos/logoFST.pdf, id=71, 869.2475pt x 236.885pt>
 File: figures/Logos/logoFST.pdf Graphic file (type pdf)
 <use figures/Logos/logoFST.pdf>
 Package pdftex.def Info: figures/Logos/logoFST.pdf  used on input line 9.
 (pdftex.def)             Requested size: 113.00613pt x 30.79613pt.
-<figures/Logos/logoLIM.pdf, id=32, 1047.915pt x 1049.9225pt>
+<figures/Logos/logoLIM.pdf, id=72, 1047.915pt x 1049.9225pt>
 File: figures/Logos/logoLIM.pdf Graphic file (type pdf)
 <use figures/Logos/logoLIM.pdf>
 Package pdftex.def Info: figures/Logos/logoLIM.pdf  used on input line 10.
@@ -2137,7 +2140,7 @@ LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line
 
 (C:\Users\tiida\AppData\Local\Programs\MiKTeX\tex/latex/calrsfs\omsrsfs.fd)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 35.
+(Font)              <10.95> on input line 45.
 
 [1
 
@@ -2151,14 +2154,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 \newpage
+l.61 \newpage
               [1
 
 
 ] [2{C:/Users/tiida/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.
 enc}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-6.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
+2.
 
 (C:\Users\tiida\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -2185,17 +2188,16 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [6
 
 
-]
-No file rapport.toc.
+] (rapport.toc)
 \tf@toc=\write7
 \openout7 = `rapport.toc'.
 
-[7
+ [7
 
-]
-No file rapport.lof.
+] (rapport.lof)
 \tf@lof=\write8
 \openout8 = `rapport.lof'.
+
 
 No file rapport.gls.
 [8
@@ -2203,7 +2205,7 @@ No file rapport.gls.
 ]
 *** Introduction ***
 (sections/Introduction.tex
-<figures/logo-technopole-reunion.png, id=110, 160.6pt x 70.2625pt>
+<figures/logo-technopole-reunion.png, id=163, 160.6pt x 70.2625pt>
 File: figures/logo-technopole-reunion.png Graphic file (type png)
 <use figures/logo-technopole-reunion.png>
 Package pdftex.def Info: figures/logo-technopole-reunion.png  used on input lin
@@ -2226,8 +2228,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \newpage
-              [1
+l.114 \newpage
+               [1
 
  <./figures/logo-technopole-reunion.png>] (sections/part1.tex
 Chapitre 1.
@@ -2248,7 +2250,7 @@ l.11 \newpage
               [2
 
 ]
-<figures/html5_logo.png, id=130, 1027.84pt x 602.25pt>
+<figures/html5_logo.png, id=181, 1027.84pt x 602.25pt>
 File: figures/html5_logo.png Graphic file (type png)
 <use figures/html5_logo.png>
 Package pdftex.def Info: figures/html5_logo.png  used on input line 15.
@@ -2332,7 +2334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-<figures/OrganigrammeLIM-v3.png, id=167, 478.9092pt x 274.1442pt>
+<figures/OrganigrammeLIM-v3.png, id=210, 478.9092pt x 274.1442pt>
 File: figures/OrganigrammeLIM-v3.png Graphic file (type png)
 <use figures/OrganigrammeLIM-v3.png>
 Package pdftex.def Info: figures/OrganigrammeLIM-v3.png  used on input line 22.
@@ -2351,23 +2353,14 @@ L3 programming layer <2024-01-04>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `rapport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `rapport.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  663F045E9733F7E651FED432F49DEC36;1925.
+Package rerunfilecheck Info: File `rapport.out' has not changed.
+(rerunfilecheck)             Checksum: 663F045E9733F7E651FED432F49DEC36;1925.
  ) 
 Here is how much of TeX's memory you used:
- 41568 strings out of 474486
- 824720 string characters out of 5743755
+ 41615 strings out of 474486
+ 826072 string characters out of 5743755
  1946542 words of memory out of 5000000
- 62959 multiletter control sequences out of 15000+600000
+ 62988 multiletter control sequences out of 15000+600000
  662786 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,13n,128p,2407b,1869s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2390,9 +2383,9 @@ Users/tiida/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/
 Users/tiida/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/
 Users/tiida/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/
 Users/tiida/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on rapport.pdf (17 pages, 1055050 bytes).
+Output written on rapport.pdf (17 pages, 1069476 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
+ 296 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
