@@ -1,0 +1,196 @@
+\documentclass [11pt,a4paper,french]{report}
+
+%====================================================
+%%			    	    Package                        %%
+%====================================================
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[utf8x]{inputenc} % Encodage du fichier tex
+\usepackage[T1]{fontenc} % Pour avoir les lettres accentuees font encoding
+\usepackage{lmodern} % Latin modern - caracteres diacritiques fran\c cais
+\usepackage[english,francais]{babel}
+
+\usepackage{lipsum} % dummy text
+\usepackage{caption}
+\usepackage{amsmath,latexsym,amsfonts,amssymb}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage[toc, title]{appendix}
+\renewcommand\appendixtocname{Annexes}
+\usepackage{color}% color text
+%\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent 
+\usepackage{setspace} % augmentation de l'espace interligne
+\setstretch{1.2}	 % inter-line
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[hidelinks]{hyperref} % Rend les liens cliquables
+\usepackage[toc, style=listgroup]{glossaries} % Ajout d'un glossaire. Celui ci apparait dans la table des matieres
+%\glossarystyle{altlistgroup}
+\loadglsentries{sections/Glossaire} % load the glossary file
+\makeglossaries % Add glossary
+\usepackage{url}
+\usepackage{enumerate} 
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{enumitem} % to modifiy the chip in enumerate environment
+
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr}
+
+
+\usepackage{pdfpages}
+
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{amsthm}
+\usepackage{dsfont}
+\usepackage{calrsfs}
+%possibilite de mettre en place des pages en mode paysage
+\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{everypage}
+%\usepackage[landscape]{geometry}
+%\usepackage{rotating}
+%--------------------------------- Page format
+
+\usepackage[left=3.5cm,top=3cm,bottom=2cm,right=2.5cm]{geometry}
+\usepackage{tikzpagenodes}
+
+
+
+%--------------------------------- figure and caption format
+
+\usepackage[font=small,skip=0pt]{caption}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+
+% code adapted from https://tex.stackexchange.com/a/11483/3954
+
+% some parameters for customization
+\def\shadowshift{3pt,-3pt}
+\def\shadowradius{6pt}
+
+\colorlet{innercolor}{black!60}
+\colorlet{outercolor}{gray!05}
+
+\newcommand{\source}[1]{\caption*{Source {#1}} }
+
+% this draws a shadow under a rectangle node
+\newcommand\drawshadow[1]{
+	\begin{pgfonlayer}{shadow}
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+		\shade[top color=innercolor,bottom color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+		\shade[left color=innercolor,right color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+		\shade[bottom color=innercolor,top color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+		\shade[outercolor,right color=innercolor,left color=outercolor] ($(#1.south west)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+		\filldraw ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)-(\shadowradius/2,\shadowradius/2)$);
+	\end{pgfonlayer}
+}
+
+% create a shadow layer, so that we don't need to worry about overdrawing other things
+\pgfdeclarelayer{shadow} 
+\pgfsetlayers{shadow,main}
+
+
+\newcommand\shadowimage[2][]{%
+	\begin{tikzpicture}
+	\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[#1]{#2}};
+	\drawshadow{image}
+	\end{tikzpicture}}
+
+
+\setlength{\textfloatsep}{-10pt plus 1.0pt minus 2.0pt}
+
+
+%--------------------------------- Bash format code 
+\usepackage{listings}
+\tcbuselibrary{listings,skins} 
+
+
+\lstdefinestyle{bash}{
+	language=bash,
+	basicstyle=\ttfamily\color{white},
+	breaklines=true
+}
+
+\newtcblisting{bash}{
+	enhanced,                             %%% needed for shadow
+	arc=2.5mm,
+	top=0mm,
+	bottom=0mm,
+	left=2mm,
+	right=2mm,
+	boxrule=0pt,
+	colback=black,
+	%shadow={5mm}{-3mm}{0mm}{fill=black!50!white,
+	%	opacity=0.5},             %%% here for shadow  and adjust as you like
+	listing only,
+	listing options={style=bash},
+	%hbox
+}
+%--------------------------------- info bulle 
+
+
+\usepackage[tikz]{bclogo}
+\usepackage{etoolbox}
+%regle la distance entre les figure et le texte , padding haut et bas d'une figure. 
+\apptocmd{\thebibliography}{\raggedright}{}{}
+
+
+\setlength{\intextsep}{20pt plus 10.0pt minus 5.0pt}
+
+
+%Mise en place de la numerotation en bas de pages dans le cadre du mode paysage cf annexe
+
+\newcommand{\Lpagenumber}{\ifdim\textwidth=\linewidth\else\bgroup
+	\dimendef\margin=0
+	\ifodd\value{page}\margin=\oddsidemargin
+	\else\margin=\evensidemargin
+	\fi
+	\raisebox{\dimexpr -\topmargin-\headheight-\headsep-0.5\linewidth}[0pt][0pt]{%
+		\rlap{\hspace{\dimexpr \margin+\textheight+\footskip}%
+			\llap{\rotatebox{90}{\thepage}}}}%
+	\egroup\fi}
+\AddEverypageHook{\Lpagenumber}%
+
+\newcommand\fnote[1]{\captionsetup{font=small}\caption*{#1}}
+
+
+%exemple de macro pour le mode bash
+
+%\begin{figure}[h!]
+%	\caption{NOM DU CAPTION}
+%	\label{NOM DU LABEL}
+%	\begin{bash}
+%		root@zeewa:~#
+%	\end{bash}
+%\end{figure}
+%
+
+%exemple de macro pour le mode commentaire 
+%\begin{bclogo}[logo=\bctrombone, couleurBarre=yellow, couleur = blue!20, arrondi=0.5,marge=10, noborder=true,ombre=true, couleurOmbre=black!30,blur]{NOM}
+%\end{bclogo}
+
+

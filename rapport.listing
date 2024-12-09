@@ -1,0 +1,2 @@
+Last login: Mon Feb 20 21:55:34 on ttys000
+seb@mbpsebastien:~# ssh-copy-id root@toto.com -p 142	
